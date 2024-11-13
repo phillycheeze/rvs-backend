@@ -1,13 +1,13 @@
-const { Sequelize } = require('sequelize');
-const User = require('./User');
-const UserAddress = require('./UserAddress');
-const WorkflowComponent = require('./WorkflowComponent');
+const { Sequelize } = require("sequelize");
+const User = require("./User");
+const UserAddress = require("./UserAddress");
+const WorkflowComponent = require("./WorkflowComponent");
 
 const sequelize = new Sequelize({
-  dialect: 'sqlite',
-  storage: 'db/primary.db'
+  dialect: "sqlite",
+  storage: "db/primary.db",
 });
-const db = {}
+const db = {};
 
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;

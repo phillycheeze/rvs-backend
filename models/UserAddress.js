@@ -1,8 +1,8 @@
-const { Sequelize, DataTypes } = require('sequelize');
-const User = require('./User');
+const { Sequelize, DataTypes } = require("sequelize");
+const User = require("./User");
 
 module.exports = (sequelize, Sequelize) => {
-  const UserAddress = sequelize.define('UserAddress', {
+  const UserAddress = sequelize.define("UserAddress", {
     address_line_1: DataTypes.STRING,
     address_line_2: DataTypes.STRING,
     city: DataTypes.STRING,
@@ -10,6 +10,5 @@ module.exports = (sequelize, Sequelize) => {
     zipcode: DataTypes.STRING,
   });
 
-  return UserAddress
-}
-
+  return UserAddress;
+};
